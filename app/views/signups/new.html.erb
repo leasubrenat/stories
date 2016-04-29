@@ -1,0 +1,28 @@
+<div class="signups-main">
+  <a id="simple-menu" href="#sidr"><img src="https://s3.amazonaws.com/codecademy-content/projects/z2d/stories/menu-white.svg" WIDTH="35" HEIGHT="35"></a>
+
+    <div id="sidr">
+      <ul>
+        <li><div id="no-turbo" data-no-turbolink><a href="/">Home</a></div></li>
+        <li><div id="no-turbo" data-no-turbolink><a href="/about">About</a></div></li>
+        <li><div id="no-turbo" data-no-turbolink><a href="/signup">Contact</a></div></li>
+      </ul>
+    </div>
+  <div class="row">
+    <div class="col-md-4"></div>
+    <div class="col-md-4" style="padding-top:70px;text-align:center;">
+      <h2 style="padding-top:70px;text-align:center;">Get the latest updates from Stories</h2><br><br>
+  		<%= form_for(@signup) do |f| %>  
+        <div class="field" style="color:#000000"> 
+            <%= f.text_area :firstname, :placeholder => "First name" %><br>
+            <%= f.text_area :email, :placeholder => "Email" %><br>
+        </div> 
+        <div class="actions"> 
+            <%= f.submit "Join" %> 
+        </div> 
+			<% end %>
+    </div>
+    <div class="col-md-4"></div>
+	</div>
+  
+</div>
